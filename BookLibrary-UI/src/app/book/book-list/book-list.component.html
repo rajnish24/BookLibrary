@@ -1,0 +1,10 @@
+<p>Book List</p>
+
+<div class="row" *ngFor="let book of bookList">
+  <div class="column">
+    <div class="card">
+      <h3>{{ book.title }}</h3>
+      <p>{{ book.language }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<p>Library List</p>
+<div *ngFor="let library of libraryList">
+  <div class="row" (click)="getBookList(library)">
+    <div class="column">
+      <div class="card">
+        <h3>{{ library.name }}</h3>
+      </div>
+    </div>
+  </div>
+</div>
