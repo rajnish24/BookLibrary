@@ -14,6 +14,18 @@ public class Author {
     private long id;
 	private String name;
 	private String description;
+	
+	public Author(String name, String description) {
+		super();
+		this.name = name;
+		this.description = description;
+	}
+	
+	public Author() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public long getId() {
 		return id;
 	}
@@ -29,6 +41,7 @@ public class Author {
 	public String getDescription() {
 		return description;
 	}
+	
 	public void setDescription(String description) {
 		this.description = description;
 	}

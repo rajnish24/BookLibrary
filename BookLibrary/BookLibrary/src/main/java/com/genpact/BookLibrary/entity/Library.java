@@ -24,6 +24,19 @@ public class Library {
 	 @JoinColumn(name="library_Id")
 	 private Set<Book> books;
 	 
+	 
+	 
+	public Library(String name, String address, Set<Book> books) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.books = books;
+	}
+	
+	public Library() {
+		super();
+	}
+
 	public long getId() {
 		return id;
 	}

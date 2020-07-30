@@ -36,6 +36,23 @@ public class Book {
 	@Column(name = "library_Id")
 	private long libraryId; 
 	
+	
+	
+	public Book(String isbn, String title, String coverImgUrl, String language, Set<Author> authors,
+			long libraryId) {
+		super();
+		this.isbn = isbn;
+		this.title = title;
+		this.coverImgUrl = coverImgUrl;
+		this.language = language;
+		this.authors = authors;
+		this.libraryId = libraryId;
+	}
+	
+	public Book() {
+		super();
+	}
+
 	public long getId() {
 		return id;
 	}
